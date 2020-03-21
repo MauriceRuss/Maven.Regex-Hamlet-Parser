@@ -10,6 +10,7 @@ public class HamletParser {
     private String hamletData;
 
     public HamletParser(){
+
         this.hamletData = loadFile();
     }
 
@@ -33,7 +34,24 @@ public class HamletParser {
     }
 
     public String getHamletData(){
+
         return hamletData;
+    }
+
+    public String changeHamletToLeon(String ham){
+        return null;
+    }
+
+    public String changeHoratioToTariq(String hor){
+        return null;
+    }
+
+    public Boolean findHoratio(String hor){
+        return null;
+    }
+
+    public Boolean findHamlet(String ham){
+        return null;
     }
 
 }
