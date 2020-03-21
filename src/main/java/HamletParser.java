@@ -1,6 +1,8 @@
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by thook on 10/7/15.
@@ -39,7 +41,9 @@ public class HamletParser {
     }
 
     public String changeHamletToLeon(String ham){
-        return null;
+        Pattern pattern = Pattern.compile("Hamlet");
+        Matcher matcher = pattern.matcher(ham);
+        return matcher.replaceAll("Leon");
     }
 
     public String changeHoratioToTariq(String hor){
@@ -53,5 +57,7 @@ public class HamletParser {
     public Boolean findHamlet(String ham){
         return null;
     }
+
+
 
 }
