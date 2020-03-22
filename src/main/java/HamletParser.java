@@ -53,7 +53,8 @@ public class HamletParser {
     }
 
     public Boolean findHoratio(String hor){
-        return null;
+        Pattern pattern = Pattern.compile("Horatio");
+        return pattern.matcher(hor).find();
     }
 
     public Boolean findHamlet(String ham){

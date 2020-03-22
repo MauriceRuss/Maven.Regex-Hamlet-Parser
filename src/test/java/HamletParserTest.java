@@ -32,6 +32,9 @@ public class HamletParserTest {
 
     @Test
     public void testFindHoratio() {
+        Boolean actual = hamletParser.findHamlet(hamletText);
+        Pattern pattern = Pattern.compile("Horatio");
+        Assert.assertTrue(actual);
     }
 
     @Test
