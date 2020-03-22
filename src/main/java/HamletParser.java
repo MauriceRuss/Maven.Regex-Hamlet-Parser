@@ -47,7 +47,9 @@ public class HamletParser {
     }
 
     public String changeHoratioToTariq(String hor){
-        return null;
+        Pattern pattern = Pattern.compile("Horatio");
+        Matcher matcher = pattern.matcher(hor);
+        return matcher.replaceAll("Tariq");
     }
 
     public Boolean findHoratio(String hor){

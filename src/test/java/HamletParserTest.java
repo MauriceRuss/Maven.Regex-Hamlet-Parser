@@ -25,6 +25,9 @@ public class HamletParserTest {
 
     @Test
     public void testChangeHoratioToTariq() {
+        String expected = hamletText;
+        String actual =hamletParser.getHamletData();
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
