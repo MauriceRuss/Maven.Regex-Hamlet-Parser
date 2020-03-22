@@ -2,6 +2,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.regex.Pattern;
+
 import static org.junit.Assert.*;
 
 public class HamletParserTest {
@@ -31,5 +33,8 @@ public class HamletParserTest {
 
     @Test
     public void testFindHamlet() {
+        Boolean actual = hamletParser.findHamlet(hamletText);
+        Pattern pattern = Pattern.compile("Hamlet");
+        Assert.assertTrue(actual);
     }
 }
